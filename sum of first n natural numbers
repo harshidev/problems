@@ -1,0 +1,8 @@
+# Get input from the user
+n = int(input("Enter a number: "))
+
+# Calculate sum using formula
+sum_natural = n * (n + 1) // 2
+
+# Display result
+print("Sum of first", n, "natural numbers is:", sum_natural)
