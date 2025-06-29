@@ -1,0 +1,13 @@
+function power(base, exponent) {
+    if (exponent === 0) {
+        return 1;
+    } else {
+        return base * power(base, exponent - 1);
+    }
+}
+
+let base = parseInt(prompt("Enter base:"));
+let exponent = parseInt(prompt("Enter exponent:"));
+let result = power(base, exponent);
+
+console.log(`${base}^${exponent} = ${result}`);
